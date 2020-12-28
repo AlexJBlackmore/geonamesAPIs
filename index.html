@@ -1,0 +1,143 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Geonames APIs: Ocean, Address, and Earthquake</title>
+		<meta name="description" content="Practising working with APIs">
+		<meta name="author" content="Alex Blackmore">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="favicon.png" rel="icon">
+		<!-- <link href="vendors/bootstrap/bootstrap.min.css" rel="stylesheet">   -->
+		<link href="css/style.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+		<table>
+			<thead>
+				<tr>
+					<th scope="col">API name</th>
+					<th scope="col">API description</th>
+					<th scope="col">Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Oceans</td>
+					<td>Finds the name of the ocean at a given pair of coordinates</td>
+					<td>
+						<br>
+						<label for="selLat">Latitude: Enter a number between -90 and 90 (decimals allowed)</label>
+						<br>
+						<input id="selLat" type="number" value="40" max="90" min="-90">
+						<br><br>
+						<label for="selLong">Longitude: Enter a number between -180 and 180 (decimals allowed)</label>
+						<br>
+						<input id="selLong" type="number" value="-23" max="180" min="-180">
+						<br><br>
+						<button id="btnRun1">Run</button>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td>Finds the address at a given pair of coordinates</td>
+					<td>
+						<br>
+						<label for="selLat2">Latitude: Enter a number between -90 and 90 (decimals allowed)</label>
+						<br>
+						<input id="selLat2" type="number" value="52.358" max="90" min="-90">
+						<br><br>
+						<label for="selLong2">Longitude: Enter a number between -180 and 180 (decimals allowed)</label>
+						<br>
+						<input id="selLong2" type="number" value="4.881" max="180" min="-180">
+						<br><br>
+						<button id="btnRun2">Run</button>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td>Earthquakes</td>
+					<td>Finds details of up to three earthquakes inside a given area</td>
+					<td>
+						<br>
+						<label for="selNorth">North</label>
+						<br>
+						<input id="selNorth" type="number" value="44.1">
+						<br><br>
+						<label for="selSouth">South</label>
+						<br>
+						<input id="selSouth" type="number" value="-9.9">
+						<br><br>
+						<label for="selEast">East</label>
+						<br>
+						<input id="selEast" type="number" value="-22.4">
+						<br><br>
+						<label for="selWest">West</label>
+						<br>
+						<input id="selWest" type="number" value="55.2">
+						<br><br>
+						<button id="btnRun3">Run</button>
+						<br>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div id="oceanResults">
+			<h3>The ocean at those coordinates is:</h3>
+			<p id="oceanResult"></p>
+		</div>
+
+		<div id="addressResults">
+			<h3>The address at those coordinates is:</h3>
+			<p id="houseNumberResult"></p>
+			<p id="streetResult"></p>
+			<p id="localityResult"></p>
+			<p id="postCodeResult"></p>
+			<p id="countryCodeResult"></p>
+
+		</div>
+
+		<div id="earthquakeResults1">
+			<h3>Earthquake(s) within that area:</h3>
+			<p id="datetimeResult">Date and time: </p>
+			<p id="depthResult">Depth: </p>
+			<p id="magnitudeResult">Magnitude: </p>
+			<p id="latitudeResult">Latitude: </p>
+			<p id="longitudeResult">Longitude: </p>
+			<hr>
+		</div>
+
+		<div id="earthquakeResults2">
+			<p id="datetimeResult2">Date and time: </p>
+			<p id="depthResult2">Depth: </p>
+			<p id="magnitudeResult2">Magnitude: </p>
+			<p id="latitudeResult2">Latitude: </p>
+			<p id="longitudeResult2">Longitude: </p>
+			<hr>
+		</div>
+
+		<div id="earthquakeResults3">
+			<p id="datetimeResult3">Date and time: </p>
+			<p id="depthResult3">Depth: </p>
+			<p id="magnitudeResult3">Magnitude: </p>
+			<p id="latitudeResult3">Latitude: </p>
+			<p id="longitudeResult3">Longitude: </p>
+			<hr>
+		</div>
+
+		<div id="preloader"></div>
+
+		<script type="application/javascript" src="vendors/jquery/jquery-2.2.3.min.js"></script>
+		<script type="application/javascript" src="js/script.js"></script>
+
+	</body>
+
+</html>
