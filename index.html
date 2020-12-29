@@ -12,16 +12,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link href="favicon.png" rel="icon">
-		<!-- <link href="vendors/bootstrap/bootstrap.min.css" rel="stylesheet">   -->
+		<link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/style.min.css" rel="stylesheet">
 
 	</head>
 
 	<body>
 
-		<table>
+		<table class="table table-bordered">
 			<thead>
 				<tr>
+					<th scope="col">#</th>
 					<th scope="col">API name</th>
 					<th scope="col">API description</th>
 					<th scope="col">Action</th>
@@ -29,6 +30,7 @@
 			</thead>
 			<tbody>
 				<tr>
+					<th scope="row">1</th>
 					<td>Oceans</td>
 					<td>Finds the name of the ocean at a given pair of coordinates</td>
 					<td>
@@ -46,6 +48,7 @@
 					</td>
 				</tr>
 				<tr>
+					<th scope="row">2</th>
 					<td>Address</td>
 					<td>Finds the address at a given pair of coordinates</td>
 					<td>
@@ -63,6 +66,7 @@
 					</td>
 				</tr>
 				<tr>
+					<th scope="row">3</th>
 					<td>Earthquakes</td>
 					<td>Finds details of up to three earthquakes inside a given area</td>
 					<td>
@@ -137,6 +141,7 @@
 
 		<script type="application/javascript" src="vendors/jquery/jquery-2.2.3.min.js"></script>
 		<script type="application/javascript" src="js/script.min.js"></script>
+		<script type="application/javascript" src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 	</body>
 
